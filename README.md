@@ -39,6 +39,20 @@ In order to connect, due to the security policies of WebBluetooth, attach the fu
 
 Disconnections can be triggered by running `bci.disconnect()`.
 
+As a note: `connect()` supports `await` and throws errors either when the user cancels the connection prompt or if the
+connection fails. Wrapping `connect()` in a `try | catch` block in an asynchronous function, as shown below:
+
+```javascript
+let connect_function = async () => {
+	try {
+		await bci.connect();
+		// Here, the device is for sure connected
+	} catch (e) {
+		// Here, the user cancelled or the device failed to connect.
+	}
+}
+```
+
 # Caveats
 
 The Ganglion board does not provide connection subscriptions and telemetry data such as battery power and temperature,
