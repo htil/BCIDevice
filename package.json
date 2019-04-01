@@ -1,0 +1,20 @@
+{
+	"name": "bci-device",
+	"description": "A simple wrapper around the Web Bluetooth implementations of the Muse and the Ganglion BCI devices.",
+	"author": {
+		"name": "Nicholas Cioli",
+		"email": "nicholascioli@gmail.com"
+	},
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc && webpack",
+		"pack": "webpack"
+	},
+	"dependencies": {
+		"ganglion-ble": "^1.0.0",
+		"muse-js": "^3.1.0",
+		"typescript": "^3.2.2",
+		"webpack": "^4.27.1",
+		"webpack-cli": "^3.1.2"
+	}
+}

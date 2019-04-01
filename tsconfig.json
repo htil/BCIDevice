@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"module": "esNext",
+		"allowJs": true,
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"outDir": "dest",
+		"moduleResolution": "node",
+		"lib": [
+			"es2018",
+			"dom"
+		]
+	},
+	"include": [
+		"./src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"**/*.spec.ts"
+	]
+}
