@@ -18,6 +18,8 @@ will then be found in the `dest` folder.
 In order to use this library, first create a `BCIDevice` (with optional data handlers) as shown below:
 
 ```javascript
+import { BCIDevice } from "bci-device";
+
 let bci = new BCIDevice({
     dataHandler: data => {...},           // Handles real-time data streamed from the headset in the form
                                           // { data: Array<number>, electrode: number, sampleRate: number }
