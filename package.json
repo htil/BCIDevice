@@ -10,6 +10,7 @@
 	},
 	"license": "MIT",
 	"scripts": {
+		"postinstall": "tsc",
 		"build": "tsc",
 		"pack": "webpack",
 		"docs": "typedoc"
