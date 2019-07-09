@@ -19,5 +19,9 @@
 	"exclude": [
 		"node_modules",
 		"**/*.spec.ts"
-	]
+	],
+	"typedocOptions": {
+		"out": "docs",
+		"mode": "modules"
+	}
 }
