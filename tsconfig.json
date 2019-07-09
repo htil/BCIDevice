@@ -5,7 +5,6 @@
 		"removeComments": true,
 		"preserveConstEnums": true,
 		"declaration": true,
-		"declarationDir": ".",
 		"sourceMap": true,
 		"outDir": "dest",
 		"moduleResolution": "node",

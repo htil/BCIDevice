@@ -1,6 +1,8 @@
 {
 	"name": "bci-device",
 	"version": "0.0.1",
+	"main": "dest/BCIDevice.js",
+	"types": "dest/BCIDevice.d.ts",
 	"description": "A simple wrapper around the Web Bluetooth implementations of the Muse and the Ganglion BCI devices.",
 	"author": {
 		"name": "Nicholas Cioli",
@@ -8,7 +10,7 @@
 	},
 	"license": "MIT",
 	"scripts": {
-		"build": "tsc && webpack",
+		"build": "tsc",
 		"pack": "webpack",
 		"docs": "typedoc"
 	},
